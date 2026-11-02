@@ -82,6 +82,10 @@ Imagens e PDFs precisam do **material original da cliente**, que NÃO está no r
 `git push` em `main`. A Vercel roda `node tests/verificar-site.js` (buildCommand) e publica `site/`. Se o teste falhar, o
 deploy falha e o site anterior continua no ar. Conferir: `npx vercel@latest ls veri-personal-chef`.
 
+Não rode `vercel deploy` de dentro de `site/` (era o fluxo antigo, antes do Git): a configuração (`cleanUrls`,
+`outputDirectory`, cache) fica no `vercel.json` da raiz, e um deploy feito de `site/` sairia sem ela. Se precisar de um
+deploy manual, rode `npx vercel@latest deploy --prod` na raiz do projeto.
+
 **O que não vai com o push** (é configurado fora do código): DNS no Cloudflare, domínios do projeto na Vercel, Search
 Console. Não há banco de dados nem migrações neste projeto.
 
