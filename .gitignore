@@ -1,0 +1,45 @@
+# Segredos e configurações locais — nunca versionar
+.env
+.env.*
+*.local
+*_CREDENTIALS*
+*credentials*.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+*.token
+.npmrc
+
+# Vínculo local com a Vercel (gerado por `vercel link`)
+.vercel/
+**/.vercel/
+
+# Banco (este projeto não usa, mas por segurança)
+supabase/.temp/
+*.dump
+*.sql.gz
+*.backup
+
+# Dependências e arquivos temporários
+node_modules/
+tmp/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Prévias feitas à mão durante o desenho dos PDFs (não são geradas pelos scripts)
+catalogo-pdf/preview.html
+catalogo-pdf/prev.png
+evento-60-anos/preview.html
+evento-60-anos/prev.png
+
+# Material da cliente — o repositório é PÚBLICO, então os originais não sobem.
+# (as imagens otimizadas em site/img já são públicas no site e continuam versionadas)
+# Para trabalhar com scripts de imagem/PDF em outro computador, copie este material à parte (ver README).
+WhatsApp Image *.jpeg
+WhatsApp Image *.jpg
+*.pdf
+evento-60-anos/fotos/

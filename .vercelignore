@@ -1,0 +1,12 @@
+# Só site/ é publicado (outputDirectory). Isto apenas evita enviar o material pesado em deploys pela CLI.
+# tests/ e build/ precisam ir: o build roda tests/verificar-site.js, que lê build/gerar.js.
+WhatsApp Image *
+*.pdf
+catalogo-pdf/
+evento-60-anos/
+tools/
+tmp/
+node_modules/
+.env*
+*.local
+.claude/

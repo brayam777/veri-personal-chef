@@ -1,0 +1,9 @@
+
+.grid.g4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 7mm 5mm; }
+.menu-cols { columns: 2; column-gap: 10mm; }
+.mblock { break-inside: avoid; margin-bottom: 4mm; }
+.mblock h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 14pt; color: var(--gold); margin-bottom: 1.5mm; }
+.mblock ul { list-style: none; }
+.mblock li { font-size: 9pt; line-height: 1.35; padding: 0.9mm 0 0.9mm 4.5mm; position: relative; color: #3a322e; }
+.mblock li::before { content: ''; position: absolute; left: 0; top: 2.6mm; width: 1.4mm; height: 1.4mm; background: var(--gold); transform: rotate(45deg); }
+.opener .num { font-family: 'Montserrat', Arial, sans-serif; font-size: 8.5pt; letter-spacing: .32em; text-transform: uppercase; }

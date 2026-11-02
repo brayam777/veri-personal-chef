@@ -1,0 +1,21 @@
+{
+  "name": "veri-personal-chef",
+  "private": true,
+  "description": "Site institucional e materiais (catálogo e portfólio em PDF) da Veri Personal Chef",
+  "scripts": {
+    "gerar": "node build/gerar.js",
+    "servir": "npx -y serve site -l 5173",
+    "test": "node tests/verificar-site.js",
+    "testar:producao": "node tests/verificar-site.js --prod",
+    "imagens": "node tools/imagens-site.js",
+    "folhas": "node tools/folhas-de-contato.js",
+    "pdf:catalogo": "bash catalogo-pdf/gerar-pdf.sh",
+    "pdf:evento": "bash evento-60-anos/gerar-pdf.sh"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
